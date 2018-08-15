@@ -1,0 +1,9 @@
+version: '3'
+services:
+    php-apache:
+        build:
+            context: ./php-apache
+        ports:
+            - 3434:3433
+        volumes:
+            - ./docroot:/var/www/html
